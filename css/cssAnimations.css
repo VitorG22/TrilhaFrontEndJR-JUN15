@@ -1,0 +1,62 @@
+@keyframes fadeIn {
+    0%{
+        opacity:0%;
+        scale: .9;
+    }
+    100%{
+        opacity:100%;
+        scale: 1;
+    }
+}
+
+@keyframes fadeFromTop {
+    0%{
+        transform: translateY(-40px);
+        opacity:0%;
+        scale: .9;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity:100%;
+        scale: 1;
+    }
+}
+
+@keyframes fadeFromBottom {
+    0%{
+        transform: translateY(40px);
+        opacity:0%;
+        scale: .9;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity:100%;
+        scale: 1;
+    }
+}
+
+@keyframes fadeFromLeft{
+    0%{
+        transform: translateX(-40px);
+        opacity:0%;
+        scale: .9;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity:100%;
+        scale: 1;
+    }
+}
+
+@keyframes fadeFromRight {
+    0%{
+        transform: translateX(40px);
+        opacity:0%;
+        scale: .9;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity:100%;
+        scale: 1;
+    }
+}

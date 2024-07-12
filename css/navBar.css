@@ -1,0 +1,63 @@
+@import './cssVariables.css';
+
+/* Nav Bar */
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    background-color: var(--default_black);
+    width: 100vw;
+    height: 4rem;
+    padding-right:2rem;
+}
+
+
+/* Switch */
+.toggleSwitch{
+    height: 1.6rem;
+    width: 3.52rem;
+    border-radius: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark_gray);
+    transition: ease .3s;
+
+}
+
+.switchLabel{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.checkbox{
+    opacity: 0%;
+}
+
+.slider{
+    height: 0.96rem;
+    aspect-ratio: 1/1;
+    background: var(--default_white);
+    position: absolute;
+    left:4px;
+    border-radius: 100%;
+    transition: ease .3s;
+
+}
+
+/* CheckBox ativa */
+
+.toggleSwitch:has(.checkbox:checked) {
+    background: var(--default_white)
+}
+
+.checkbox:checked~.slider{
+    background-image: var(--gradient_1);
+    transform: translateX(calc(3.52rem - 8px - 0.96rem))
+}

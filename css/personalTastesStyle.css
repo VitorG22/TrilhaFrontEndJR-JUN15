@@ -1,0 +1,109 @@
+@import 'cssVariables.css';
+@import 'cssAnimations.css';
+
+.personalTastes {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 5rem 0px;
+    position: relative;
+    padding: 0 2rem;
+    margin: 10rem 0; 
+}
+
+
+
+
+.gamesList{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    transform-style: preserve-3d;
+    transform: perspective(500px);
+    
+}
+
+.gameImageContainer{
+    transition: ease .3s;
+    display: flex;
+    position: relative;
+    height: clamp(100px,20vw ,192px);
+    aspect-ratio: 1/1.33;
+    position: relative;
+    background-size:cover ;
+}
+
+.gameImageContainer img{
+    border-radius: 4px;
+    
+}
+.gameImageContainer:hover{
+    filter: brightness(100%);
+    scale: 1.02;
+}
+
+.game_2{
+    filter: brightness(80%);
+    background-image: url('https://static-cdn.jtvnw.net/ttv-boxart/2104758320_IGDB-144x192.jpg');
+}
+
+.game_1{
+    transform: translateZ(-50px) ;
+    filter: brightness(40%);
+    background-image: url('https://static-cdn.jtvnw.net/ttv-boxart/515025-144x192.jpg');
+    
+}
+.game_3{
+    transform: translateZ(-50px) ;
+    filter: brightness(40%);
+    background-image: url('https://static-cdn.jtvnw.net/ttv-boxart/460630_IGDB-144x192.jpg');
+}
+/* Game Card Reflex */
+
+.gameImageContainer::after{
+    content: '';
+    background-image: inherit;
+    height: 40%;
+    width: inherit;
+    position: absolute;
+    aspect-ratio: 1/0.532;
+    bottom: -41%;
+    transform: scaleY(-1);
+    background-position: bottom;
+    background-size:cover ;
+    mask-image: linear-gradient(0deg, #00000070, transparent ); 
+}
+
+
+
+/* Game Card Moving Effects */
+
+.game_1:hover + *{
+    transform: rotateY(-10deg);
+    filter: blur(1px) brightness(80%)
+}
+.game_1:hover + * + *{
+    transform: translateZ(-50px)  rotateY(-15deg);
+    filter: blur(1px) brightness(40%)
+}
+.game_1:has(+ *:hover){
+    transform: translateZ(-50px)  rotateY(10deg);
+    filter: blur(1px) brightness(40%)
+}
+.game_1:has(+ * + *:hover){
+    transform: translateZ(-50px)  rotateY(15deg);
+    filter: blur(1px) brightness(40%)
+}
+
+.game_2:hover + *{
+    transform: translateZ(-50px)  rotateY(-10deg);    
+    filter: blur(1px) brightness(40%)
+}
+
+.game_2:has(+ *:hover){
+    transform: rotateY(10deg);
+    filter: blur(1px) brightness(80%)
+}

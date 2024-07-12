@@ -1,0 +1,20 @@
+@import 'cssVariables.css';
+@import 'cssAnimations.css';
+
+.motivation {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 2rem ;
+    position: relative;
+}
+.motivation .backgroundImg{
+    position: absolute;
+    left: calc(5% - 30px);
+    width: 30rem;
+    opacity: 10%;
+}
+
+.motivationCard{
+    margin-right: 5%
+}

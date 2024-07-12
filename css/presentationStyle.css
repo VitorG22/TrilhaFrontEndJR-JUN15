@@ -1,0 +1,56 @@
+@import 'cssVariables.css';
+@import 'cssAnimations.css';
+
+.presentationSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    width: full;
+    padding: 4rem 0 4rem 5%;
+    background: var(--default_black)
+
+}
+.profileImage {
+    border-radius: 100%;
+    height: clamp(11rem, 20vw, 16rem);
+    aspect-ratio: 1/1;
+    animation: fadeIn ease-in-out .3s
+}
+.profileImage img {
+    width: 100%;
+}
+.presentationArticle h1 {
+    color: var(--default_white);
+    font-family: var(--primary_font);
+    font-size: clamp(1.3rem, 3vw ,2.5rem);
+    animation: fadeFromRight ease .5s .2s both;
+}
+.presentationArticle h1 span {
+    background-image: var(--gradient_1);
+    background-clip: text;
+    color: transparent;
+    font-size: clamp(1.8rem, 4vw, 3rem)
+}
+.presentationArticle p {
+    color: var(--light_gray);
+    font-family: var(--primary_font);
+    font-size: 1rem;
+    animation: fadeFromRight;
+    animation-timeline: view();
+    /* animation: fadeFromRight ease .5s .3s both; */
+
+}
+.presentationArticle p span {
+    background-image: var(--gradient_1);
+    background-clip: text;
+    color: transparent;
+}
+.presentationSection .backgroundSvg {
+    position: absolute;
+    bottom: 0;
+    right: 10rem;
+    width: 28rem;
+    mask-image: linear-gradient(0deg, #000000, transparent);
+}

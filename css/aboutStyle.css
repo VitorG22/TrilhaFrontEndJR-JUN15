@@ -1,0 +1,21 @@
+@import 'cssVariables.css';
+@import 'cssAnimations.css';
+
+.about {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;    
+    padding: 5rem 2rem 0 2rem;
+    background-image: linear-gradient(180deg, #000000, transparent );
+    position: relative;
+}
+.about .backgroundSvg{
+    position: absolute;
+    left:5%;
+    max-width: 30rem;
+    opacity: 10%;
+}
+.aboutCard{
+margin-right: 5%;
+}

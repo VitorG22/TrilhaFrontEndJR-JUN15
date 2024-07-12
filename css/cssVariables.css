@@ -1,0 +1,12 @@
+
+:root{
+    --default_red: #e53939;
+    --default_black: #000000;
+    --default_white: #ffffff;
+    --light_gray: #838282;
+    --dark_gray: #121212;
+
+    --primary_font: "Telex", sans-serif;
+
+    --gradient_1: linear-gradient(90deg, #FF512F,#e53939);
+}
