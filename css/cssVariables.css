@@ -3,10 +3,12 @@
     --default_red: #e53939;
     --default_black: #000000;
     --default_white: #ffffff;
+    --secondary_white: #f8f7fc;
     --light_gray: #838282;
     --dark_gray: #121212;
+    --dark_blue: #191b2a;
 
     --primary_font: "Telex", sans-serif;
-
+    --gradient_1: linear-gradient(90deg, #FF512F,#e53939);
     --gradient_1: linear-gradient(90deg, #FF512F,#e53939);
 }

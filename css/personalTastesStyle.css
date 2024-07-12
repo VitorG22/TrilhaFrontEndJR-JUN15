@@ -116,3 +116,8 @@
         height: clamp(100px,35vw ,250px);
     }
 }
+
+/* Light Mode */
+.gameImageContainer.light{
+    filter: brightness(100%);
+}

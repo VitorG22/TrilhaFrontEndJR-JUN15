@@ -12,10 +12,7 @@ body {
     background-image: linear-gradient(#ffffff12 1px, transparent 1px), linear-gradient(to right, #ffffff12 1px, var(--default_black) 1px);
     background-size: 80px 80px;
 }
-/* *{
-    border: solid blue 2px;
 
-} */
 
 /* Scroll Bar */
 *::-webkit-scrollbar {
@@ -48,6 +45,8 @@ body {
 
     animation: fadeIn both;
     animation-timeline: view(70% 5%);
+    transition:  .3s;
+
 }
 
 .articleCard::after{
@@ -62,6 +61,8 @@ body {
     
 }
 
+
+
 .articleCard .highlightedText{
     background-image: var(--gradient_1);
     background-clip: text ;
@@ -72,5 +73,29 @@ body {
     .articleCard{
         width: 90%;
         padding: 1.5rem;
+    }
+}
+
+
+/* light Mode */
+
+body.light{
+    background-image: linear-gradient( #e0e0e0 1px, transparent 1px), linear-gradient(to right, #e0e0e0 1px, var(--default_white) 1px);
+    /* background-image: linear-gradient(var(--dark_blue) 1px, transparent 1px), linear-gradient(to right, var(--dark_blue) 1px, var(--default_white) 1px); */
+}
+
+
+.articleCard.light{    
+    background: var(--dark_blue);
+    /* background: var(--default_white); */
+    color: #737581;
+    /* color: var(--default_black); */
+    position: relative;
+
+    animation: fadeIn both;
+    animation-timeline: view(70% 5%);
+    box-shadow: 3px 3px 10px #00000050;
+    & .highlightedText{
+        color: white
     }
 }

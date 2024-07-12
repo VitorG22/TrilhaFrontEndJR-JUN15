@@ -7,7 +7,7 @@
     align-items: center;
     gap: 2rem;    
     padding: 5rem 2rem 0 2rem;
-    background-image: linear-gradient(180deg, #000000, transparent );
+    background-image: linear-gradient(180deg, var(--default_black), transparent );
     position: relative;
 }
 .about .backgroundSvg{
@@ -17,7 +17,7 @@
     opacity: 10%;
 }
 .aboutCard{
-margin-right: 5%;
+    margin-right: 5%;
 }
 
 
@@ -37,4 +37,9 @@ margin-right: 5%;
     .aboutCard{
         margin-right: 0;   
     }
+}
+
+/* Light Mode */
+.about.light {
+    background-image: linear-gradient(180deg, var(--secondary_white), transparent );
 }

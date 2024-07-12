@@ -9,8 +9,8 @@
     position: relative;
     width: full;
     padding: 4rem 0 4rem 5%;
-    background: var(--default_black)
-
+    background: var(--default_black);
+    transition:  .3s;
 }
 .profileImage {
     border-radius: 100%;
@@ -51,7 +51,7 @@
     }
 }
 
-
+/* Mobile */
 @media (max-width: 440px) {
     .presentationSection{
         gap: 2rem;
@@ -71,4 +71,17 @@
     }
 
     
+}
+
+
+/* Light Mode */
+
+.presentationSection.light{
+    background: var(--secondary_white);
+    & h1{
+        color: var(--dark_blue)
+    }
+    & p{
+        color: var(--dark_blue)
+    }
 }
