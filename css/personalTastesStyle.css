@@ -13,9 +13,6 @@
     margin: 10rem 0; 
 }
 
-
-
-
 .gamesList{
     display:flex;
     flex-direction: row;
@@ -32,7 +29,6 @@
     position: relative;
     height: clamp(100px,20vw ,192px);
     aspect-ratio: 1/1.33;
-    position: relative;
     background-size:cover ;
 }
 
@@ -106,4 +102,17 @@
 .game_2:has(+ *:hover){
     transform: rotateY(10deg);
     filter: blur(1px) brightness(80%)
+}
+
+
+
+/* Mobile */
+@media (max-width: 440px){    
+    .personalTastes {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .gameImageContainer{
+        height: clamp(100px,35vw ,250px);
+    }
 }

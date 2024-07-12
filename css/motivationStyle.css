@@ -7,6 +7,7 @@
     align-items: center;
     padding: 2rem ;
     position: relative;
+    margin: 10rem 0;
 }
 .motivation .backgroundImg{
     position: absolute;
@@ -17,4 +18,21 @@
 
 .motivationCard{
     margin-right: 5%
+}
+
+@media (max-width: 440px){
+    
+    .motivation {
+        justify-content: center;
+        align-items: center;
+    }
+    .motivation .backgroundImg{
+        max-width: 70%;
+        top: -30%;
+        left: auto;
+    }
+
+    .motivationCard{
+        margin-right: 0;
+    }
 }

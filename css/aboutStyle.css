@@ -19,3 +19,22 @@
 .aboutCard{
 margin-right: 5%;
 }
+
+
+/* Mobile */
+@media (max-width:440px){
+    
+    .about {
+        justify-content: center;
+        align-items: center;
+    }
+    .about .backgroundSvg{
+        max-width: 70%;
+        top: 0%;
+        left:auto;
+
+    }
+    .aboutCard{
+        margin-right: 0;   
+    }
+}

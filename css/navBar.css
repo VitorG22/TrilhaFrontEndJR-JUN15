@@ -10,7 +10,7 @@
     background-color: var(--default_black);
     width: 100vw;
     height: 4rem;
-    padding-right:2rem;
+    /* padding-right:2rem; */
 }
 
 
@@ -60,4 +60,14 @@
 .checkbox:checked~.slider{
     background-image: var(--gradient_1);
     transform: translateX(calc(3.52rem - 8px - 0.96rem))
+}
+
+@media (max-width:440px){
+    .navBar {
+    
+        width: 100vw;
+        height:fit-content;
+        padding: 1rem 2rem 0 0;
+    }
+    
 }

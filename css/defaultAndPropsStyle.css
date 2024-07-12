@@ -12,6 +12,10 @@ body {
     background-image: linear-gradient(#ffffff12 1px, transparent 1px), linear-gradient(to right, #ffffff12 1px, var(--default_black) 1px);
     background-size: 80px 80px;
 }
+/* *{
+    border: solid blue 2px;
+
+} */
 
 /* Scroll Bar */
 *::-webkit-scrollbar {
@@ -51,7 +55,6 @@ body {
     height: 1px;
     width: 100%;
     background-image: var(--gradient_1);
-    /* background: var(--default_red); */
     position: absolute;
     bottom:0;
     left: 0;
@@ -63,4 +66,11 @@ body {
     background-image: var(--gradient_1);
     background-clip: text ;
     color: transparent
+}
+
+@media (max-width:440px){
+    .articleCard{
+        width: 90%;
+        padding: 1.5rem;
+    }
 }
